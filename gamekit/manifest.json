@@ -1,0 +1,12 @@
+{
+    shaders : [
+        {
+            name: "gamekit::tilemap_vertex_shader",
+            path: "tilemap_vertex_shader.vert"
+        },
+        {
+            name: "gamekit::tilemap_fragment_shader",
+            path: "tilemap_fragment_shader.frag"
+        }
+    ]
+}

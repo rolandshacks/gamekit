@@ -1,0 +1,33 @@
+{
+    options : {
+        title: "Hello, world!",
+        window_x: -1,
+        window_y: 0,
+        window_width: 800,
+        window_height: 600,
+        fps: 10,
+        show_statistics: true
+    },
+    tasks : [
+        {
+            name: "background-task",
+            id: 1,
+            interval: 1000000
+        }
+    ],
+    materials : [
+        {
+            name : "default",
+            vertex_shader: "vertex_shader",
+            fragment_shader: "fragment_shader"
+        }
+    ],
+    shaders : [
+        {
+            path: "vertex_shader.vert"
+        },
+        {
+            path: "fragment_shader.frag"
+        }
+    ]
+}

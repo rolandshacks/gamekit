@@ -1,0 +1,118 @@
+{
+    options : {
+        title: "Particles, Sprites and Fonts",
+        window_width: 800,
+        window_height: 600,
+        fps: 60
+    },
+
+    materials : [
+        {
+            name : "logo",
+            blend_mode: "normal",
+            vertex_shader: "vertex_shader",
+            fragment_shader: "logo_shader",
+            texture: "logo",
+            texture_binding: 1,
+            texture_filtering: false
+        },
+        {
+            name: "particles",
+            blend_mode: "additive",
+            vertex_shader: "vertex_shader",
+            fragment_shader: "particle_shader",
+            texture: "particle",
+            texture_binding: 1,
+            texture_filtering: true
+        },
+        {
+            name: "sprites",
+            blend_mode: "normal",
+            vertex_shader: "vertex_shader",
+            fragment_shader: "sprite_shader",
+            texture: "spritesheet",
+            texture_binding: 1,
+            texture_filtering: false
+        },
+        {
+            name: "text",
+            blend_mode: "normal",
+            vertex_shader: "vertex_shader",
+            fragment_shader: "fragment_shader",
+            font: "font",
+            texture: "charset",
+            texture_binding: 1,
+            texture_filtering: false
+        }
+    ],
+
+    data : [
+        {
+            name : "data",
+            path : "data.dat"
+        }
+    ],
+
+    textures : [
+        {
+            name : "logo",
+            path : "logo.png"
+        },
+        {
+            name : "particle",
+            path : "particle.png"
+        },
+        {
+            name : "spritesheet",
+            path : "spritesheet.png"
+        },
+        {
+            name : "font",
+            path : "font.png"
+        },
+        {
+            name : "charset",
+            path : "charset.bin"
+        }
+    ],
+
+    shaders : [
+        {
+            name : "vertex_shader",
+            path : "vertex_shader.vert"
+        },
+        {
+            name : "logo_shader",
+            path : "logo_shader.frag"
+        },
+        {
+            name : "particle_shader",
+            path : "particle_shader.frag"
+        },
+        {
+            name : "sprite_shader",
+            path : "sprite_shader.frag"
+        },
+        {
+            name : "fragment_shader",
+            path : "fragment_shader.frag"
+        }
+    ],
+
+    bitmaps : [
+        {
+            name : "bitmap",
+            path : "bitmap.png"
+        }
+    ],
+
+    fonts : [
+        { 
+            name : "font",
+            texture: "charset",
+            charset: " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ",
+            char_width : 8,
+            char_height : 8
+        }
+    ]
+}

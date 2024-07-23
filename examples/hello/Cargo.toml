@@ -1,0 +1,12 @@
+[package]
+name = "hello"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+log.workspace = true
+cgmath.workspace = true
+gamekit.workspace = true
+
+[build-dependencies]
+gamekit.workspace = true

@@ -1,0 +1,33 @@
+[workspace]
+resolver = "2"
+members = [
+    "gamebuilder",
+    "gamekit",
+    "examples/hello",
+    "examples/particles",
+	"examples/shoot",
+    "examples/tilemap"
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+
+[workspace.dependencies]
+log = "0.4.27"
+cgmath = "0.18.0"
+gamebuilder = { version = "0.1.0", path = "gamebuilder" }
+gamekit = { version = "0.1.0", path = "gamekit" }
+
+[workspace.lints.rust]
+missing_debug_implementations = "allow"
+missing_docs = "allow"
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(coverage,coverage_nightly)'] }
+unsafe_op_in_unsafe_fn = "deny"
+unsafe_attr_outside_unsafe = "deny"
+
+[workspace.lints.clippy]
+module_inception = "allow"
+too_many_arguments = "allow"
+empty_line_after_doc_comments = "allow"
+#bool_comparison = "allow"

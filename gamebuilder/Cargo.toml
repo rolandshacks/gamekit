@@ -1,0 +1,18 @@
+[package]
+name = "gamebuilder"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+log.workspace = true
+json5 = "1.3.0"
+cgmath.workspace = true
+serde = { version = "1.0", features = ["derive"] }
+
+#gamekit.workspace = true

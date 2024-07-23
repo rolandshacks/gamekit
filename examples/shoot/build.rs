@@ -1,0 +1,2 @@
+//! Gamekit Build
+gamekit::build!();
