@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+members = [
+    "gamekit",
+    "compiler",
+    "examples/hello",
+    "examples/particles",
+    "examples/scrolling",
+	"examples/shoot"
+]

@@ -1,0 +1,52 @@
+{
+    "version": "1.0",
+    "fileName": "sprite_speet.png",
+    "width": 448,
+    "height": 32,
+    "columns": 14,
+    "rows": 1,
+    "frames": [
+        {
+            "duration": 100
+        },
+        {
+            "duration": 250
+        },
+        {
+            "duration": 250
+        },
+        {
+            "duration": 250
+        },
+        {
+            "duration": 250
+        },
+        {
+            "duration": 250
+        },
+        {
+            "duration": 100
+        },
+        {
+            "duration": 100
+        },
+        {
+            "duration": 100
+        },
+        {
+            "duration": 100
+        },
+        {
+            "duration": 100
+        },
+        {
+            "duration": 100
+        },
+        {
+            "duration": 100
+        },
+        {
+            "duration": 100
+        }
+    ]
+}

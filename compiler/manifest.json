@@ -1,0 +1,45 @@
+{
+    materials : [
+        {
+            name : "material1",
+            texture: "particle",
+            vertex_shader : "vert",
+            fragment_shader: "logo",
+            blending: true,
+            blend_mode: "normal",
+            backface_culling: true,
+            frontface_clockwise: true,
+            depth_testing: true,
+            depth_writing: true
+        }
+    ],
+
+    textures : [
+        {
+            path : "level1/partB/bitmap.png"
+        },
+        {
+            name : "particle",
+            path : "particle.png"
+        },
+        {
+            name : "spritesheet",
+            path : "spritesheet.png"
+        }
+    ],
+
+    shaders : [
+        {
+            name : "particles",
+            path : "particles.frag"
+        },
+        {
+            name : "logo",
+            path : "logo.frag"
+        },
+        {
+            name : "vert",
+            path : "shader.vert"
+        }
+    ]
+}

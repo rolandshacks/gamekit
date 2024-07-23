@@ -1,0 +1,56 @@
+{
+    options : {
+        title: "Scrolling Demo",
+        window_width: 420,
+        window_height: 300,
+        view_width: 320,
+        view_height: 200,
+        scaling_mode: "zoom",
+        fps: 60
+    },
+
+    materials : [
+        {
+            name : "background",
+            blend_mode: "normal",
+            vertex_shader: "vertex_shader",
+            fragment_shader: "fragment_shader",
+            texture: "background",
+            texture_binding: 1,
+            texture_filtering: false
+        },
+
+        {
+            name : "tilemap",
+            blend_mode: "normal",
+            vertex_shader: "vertex_shader",
+            fragment_shader: "fragment_shader",
+            texture: "tiles",
+            texture_binding: 1,
+            texture_filtering: false
+        }
+
+    ],
+
+    textures : [
+        {
+            name : "background",
+            path : "background.png"
+        },
+        {
+            name : "tiles",
+            path : "tiles.png"
+        }
+    ],
+
+    shaders : [
+        {
+            name : "vertex_shader",
+            path : "vertex_shader.vert"
+        },
+        {
+            name : "fragment_shader",
+            path : "fragment_shader.frag"
+        }
+    ]
+}

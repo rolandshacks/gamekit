@@ -1,0 +1,103 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug compiler",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=compiler",
+                    "--package=compiler"
+                ],
+                "filter": {
+                    "name": "compiler",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "--nochecks",
+                "--stdout"
+            ],
+            "cwd": "${workspaceFolder}/compiler"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug 'hello'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=hello",
+                    "--package=hello"
+                ],
+                "filter": {
+                    "name": "hello",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug 'particles'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=particles",
+                    "--package=particles"
+                ],
+                "filter": {
+                    "name": "particles",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug 'scrolling'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=scrolling",
+                    "--package=scrolling"
+                ],
+                "filter": {
+                    "name": "scrolling",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug 'shoot'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=shoot",
+                    "--package=shoot"
+                ],
+                "filter": {
+                    "name": "shoot",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    options : {
+        title: "Shooter",
+        window_x: -1,
+        window_y: 0,
+        window_width: 1280,
+        window_height: 800,
+        view_width: 320,
+        view_height: 200,
+        scaling_mode: "zoom",
+        fps: 60,
+        show_statistics: true,
+        headless: true
+    },
+    materials : [
+        {
+            name : "default",
+            vertex_shader: "vertex_shader",
+            fragment_shader: "fragment_shader",
+            texture: "spritesheet",
+            texture_binding: 1,
+            texture_filtering: false
+        }
+    ],
+    textures : [
+        {
+            name : "spritesheet",
+            path : "spritesheet.png"
+        }
+    ],
+    shaders : [
+        {
+            path: "vertex_shader.vert"
+        },
+        {
+            path: "fragment_shader.frag"
+        }
+    ],
+    music : [
+        {
+            name: "music",
+            path: "music.ogg"
+        }
+    ],
+    samples : [
+        {
+            path: "sample.ogg"
+        }
+    ]
+
+}
